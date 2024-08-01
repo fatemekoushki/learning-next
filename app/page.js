@@ -1,95 +1,138 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import React from 'react';
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
+    <section id="home" className="welcome-hero">
+
+  
+   
+ 
+
+    <div class="container">
+      <div class="welcome-hero-txt">
+        <h2>get your desired car in resonable price</h2>
         <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.js</code>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore   magna aliqua. 
         </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+        <button class="welcome-btn" onclick="window.location.href='#'">contact us</button>
+      </div>
+    </div>
+
+    <div className="container">
+      <div className="row">
+        <div className="col-md-12">
+          <div className="model-search-content">
+            <div className="row">
+              <div className="col-md-offset-1 col-md-2 col-sm-12">
+                <div className="single-model-search">
+                  <h2>select year</h2>
+                  <div className="model-select-icon">
+                    <select className="form-control">
+
+                        <option value="default">year</option>
+
+                        <option value="2018">2018</option>
+
+                        <option value="2017">2017</option>
+                        <option value="2016">2016</option>
+
+                    </select>
+                  </div>
+                </div>
+                <div className="single-model-search">
+                  <h2>body style</h2>
+                  <div className="model-select-icon">
+                    <select className="form-control">
+
+                        <option value="default">style</option>
+
+                        <option value="sedan">sedan</option>
+
+                        <option value="van">van</option>
+                        <option value="roadster">roadster</option>
+
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-offset-1 col-md-2 col-sm-12">
+                <div className="single-model-search">
+                  <h2>select make</h2>
+                  <div class="model-select-icon">
+                    <select class="form-control">
+
+                        <option value="default">make</option>
+
+                        <option value="toyota">toyota</option>
+
+                        <option value="holden">holden</option>
+                        <option value="maecedes-benz">maecedes-benz.</option>
+
+                    </select>
+                  </div>
+                </div>
+                <div class="single-model-search">
+                  <h2>car condition</h2>
+                  <div class="model-select-icon">
+                    <select className="form-control">
+
+                        <option value="default">condition</option>
+
+                        <option value="something">something</option>
+
+                        <option value="something">something</option>
+                        <option value="something">something</option>
+
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-offset-1 col-md-2 col-sm-12">
+                <div className="single-model-search">
+                  <h2>select model</h2>
+                  <div className="model-select-icon">
+                    <select className="form-control">
+
+                        <option value="default">model</option>
+
+                        <option value="kia-rio">kia-rio</option>
+
+                        <option value="mitsubishi">mitsubishi</option>
+                        <option value="ford">ford</option>
+
+                    </select>
+                  </div>
+                </div>
+                <div className="single-model-search">
+                  <h2>select price</h2>
+                  <div className="model-select-icon">
+                    <select className="form-control">
+
+                        <option value="default">price</option>
+
+                        <option value="$0.00">$0.00</option>
+
+                        <option value="$0.00">$0.00</option>
+                        <option value="$0.00">$0.00</option>
+
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-2 col-sm-12">
+                <div className="single-model-search text-center">
+                  <button className="welcome-btn model-search-btn" onclick="window.location.href='#'">
+                    search
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+    </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+  </section>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
   );
 }
